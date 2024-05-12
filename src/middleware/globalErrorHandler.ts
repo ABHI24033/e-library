@@ -14,5 +14,5 @@ export const globalErrorHandler = (
     message: err.message,
     errorStack: config.env === "development" ? err.stack : "",
   });
-  // next();
+//   next();
 };
