@@ -2,6 +2,7 @@ import  express  from "express";
 import { globalErrorHandler } from "./middleware/globalErrorHandler";
 import createHttpError from "http-errors";
 import userRouter from "./user/userRouter";
+import bookRouter from "./book/bookRouter";
 
 const app= express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(globalErrorHandler);
 
 app.use("/api/user",userRouter);
+app.use("/api/books",bookRouter);
 // routes
 app.get("/", (req, res) => {
   const stayus=createHttpError(400,"Something went wrong");
