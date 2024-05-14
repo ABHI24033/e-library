@@ -14,10 +14,6 @@ app.use(globalErrorHandler);
 app.use("/api/user", userRouter);
 app.use("/api/books", bookRouter);
 // routes
-app.get("/", (req, res) => {
-    const stayus = createHttpError(400, "Something went wrong");
-    throw stayus;
-    res.send("Hello World!");
-});
+// 
 
 export default app;
