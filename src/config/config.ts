@@ -10,6 +10,7 @@ const _config={
     cloudaniry_cloud:process.env.CLOUDANIRY_CLOUD,
     cloudaniry_api_key:process.env.CLOUDANIRY_API_KEY,
     cloudinary_secret:process.env.CLOUDANIRY_SECRET,
+    frontendUrl:process.env.FRONTEND_URL
 }
 
 export const config=Object.freeze(_config);
